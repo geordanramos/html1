@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Atividade</title>
+</head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: justify;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+
+<h1>Atividade 1</h1>
+<p><b>01- O que são padrões de projeto?</b></p>
+<p>são soluções para problemas comuns que encontramos no desenvolvimento ou manutenção de um software orientado a objetos</p>
+<p><b>02- Para que servem os padrões de projeto?</b></p>
+<p>Somente conhecer e utilizar os princípios básicos da orientação a objetos ou de uma linguagem de programação, não garante o desenvolvimento de softwares flexíveis, reutilizáveis e de fácil manutenção. Os padrões de projeto representam soluções que tentam suprir tais necessidades.</p>
+<p><b>03- Padrões de projeto são diferentes para linguagens diferentes?</b></p>
+<p>Não. O objetivo dos padrões de projeto, são tornar componentes reutilizáveis que facilitam a padronização, que permita agilidade para as soluções de problemas recorrentes no desenvolvimento do sistema. Visam facilitar a reutilização de soluções de desenho - isto é, soluções na fase de projeto do software - e
+estabelecem um vocabulário comum de desenho, facilitando comunicação, documentação e aprendizado dos sistemas de software.
+</p>
+<p><b>04- Quem criou o termo?</b></p>
+<p>O arquiteto Christopher Alexander.</p>
+<p><b>05- Quais categorias existem?</b></p>
+<p>Encapsulamento, generalidade, equilíbrio, abstração, abertura e combinatoriedade.</p>
+<p><b>06- Quantos e quais são os padrões por categoria?</b></p>
+<p>De acordo com o livro: "Padrões de Projeto: soluções reutilizáveis de software orientado a objetos", os padrões "GoF" são divididos em 24 tipos. Em função dessa grande quantidade de padrões, foi necessário classificá-los de acordo com as suas finalidades.</p>
+<p>São 3 as classificações/famílias:</p>
+<p><u>Padrões de criação:</u> Abstract Factory, Object pool, Builder, Factory Method, Prototype e Singleton.</p>
+<p><u>Padrões estruturais:</u>Private class data, Adapter, Bridge, Composite, Decorator, Facade, Business Delegate, Flyweight e Proxy.</p>
+<p><u>Padrões comportamentais:</u>Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method e Visitor<p>
+<p><b>07- Faça uma tabela explicando a utilidade de cada um dos padrões GoF</b></p>
+<p>
+<h2>Padrões GoF</h2>
+
+<table>
+  <tr>
+    <th>Classificação</th>
+    <th>Resumo</th>
+    
+  </tr>
+  <tr>
+    <td><b>CRIAÇÃO</b></td>
+    <td>Os padrões de criação são aqueles que abstraem e/ou adiam o processo criação dos objetos. Eles ajudam a tornar um sistema independente de como seus objetos são criados, compostos e representados. Um padrão de criação de classe usa a herança para variar a classe que é instanciada, enquanto que um padrão de criação de objeto delegará a instanciação para outro objeto. Os padrões de criação tornam-se importantes à medida que os sistemas evoluem no sentido de dependerem mais da composição de objetos do que a herança de classes. O desenvolvimento baseado na composição de objetos possibilita que os objetos sejam compostos sem a necessidade de expor o seu interior como acontece na herança de classe, o que possibilita a definição do comportamento dinamicamente e a ênfase desloca-se da codificação de maneira rígida de um conjunto fixo de comportamentos, para a definição de um conjunto menor de comportamentos que podem ser compostos em qualquer número para definir comportamentos mais complexos. Há dois temas recorrentes nesses padrões. Primeiro todos encapsulam conhecimento sobre quais classes concretas são usadas pelo sistema. Segundo ocultam o modo como essas classes são criadas e montadas. Tudo que o sistema sabe no geral sobre os objetos é que suas classes são definidas por classes abstratas. Conseqüentemente, os padrões de criação dão muita flexibilidade no que é criado, quem cria, como e quando é criado. Eles permitem configurar um sistema com objetos “produto” que variam amplamente em estrutura e funcionalidade. A configuração pode ser estática (isto é, especificada em tempo de compilação) ou dinâmica (em tempo de execução).</td>
+    
+  </tr>
+  <tr>
+    <td><b>ESTRUTURAIS</b></td>
+    <td>Os padrões estruturais se preocupam com a forma como classes e objetos são compostos para formar estruturas maiores. Os de classes utilizam a herança para compor interfaces ou implementações, e  os de objeto descrevem maneiras de compor objetos para obter novas funcionalidades. A flexibilidade obtida pela composição de objetos provém da capacidade de mudar a composição em tempo de execução o que não é possível com a composição estática (herança de classes).</td>
+   
+  </tr>
+  <tr>
+    <td>COMPORTAMENTAIS</td>
+    <td>Os padrões de comportamento se concentram nos algoritmos e atribuições de responsabilidades entre os objetos. Eles não descrevem apenas padrões de objetos ou de classes, mas também os padrões de comunicação entre os objetos. Os padrões comportamentais de classes utilizam a herança para distribuir o comportamento entre classes, e os padrões de comportamento de objeto utilizam a composição de objetos em contrapartida a herança. Alguns descrevem como grupos de objetos cooperam para a execução de uma tarefa que não poderia ser executada por um objeto sozinho.</td>
+</table>
+
+<p><b>08- Faça uma tabela explicando a utilidade de cada um dos padrões GRASP</b></p>
+
+<h2>Padrões GRASP</h2>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Resumo</th>
+    <th>Benefícios</th>
+    
+  </tr>
+  <tr>
+    <td><b>Information Expert</b></td>
+    <td>É conhecido por ser o princípio fundamental para atribuir responsabilidade.</td>
+    <td>Encapsulamento é mantido; Fraco acoplamento (facilidade de manutenção); Alta coesão (objetos fazem tudo relacionado à sua própria informação).
+</td>
+    
+  </tr>
+  <tr>
+    <td><b>Creator</b></td>
+    <td>É uma das atividades mais comuns em um sistema de orientação a objetos. Atribui qual classe é responsável por criar os objetos.</td>
+   	<td>Facilidade no desenvolvimento do projeto e compreensão.</td>
+  </tr>
+  <tr>
+    <td><b>High Coesion</b></td>
+    <td>É um padrão avaliativo que tenta manter os objetos adequadamente focado, gerenciado e compreensível.</td>
+	<td>Melhor claridade e facilidade de compreensão do projeto;
+Simplificação da manutenção;</td>
+  </tr>
+  <tr>
+   <td><b>Low Coupling</b></td>
+   <td>É um padrão de avaliação, que determina como atribuir responsabilidades para apoiar.</td>
+   <td>Menor dependência entre as classes;
+Mudar de uma classe que tem menor impacto sobre outras classes;
+Maior potencial de reutilização.
+</td>
+  </tr>
+  <tr>
+  <td><b>Controller</b></td>
+  <td>O padrão controlador atribui a responsabilidade de lidar com os eventos do sistema para uma classe que representa a um cenário de caso de uso do sistema global.</td>
+  <td>Diminui a sensibilidade da camada de apresentação em relação à lógica de domínio;
+Oportunidade para controlar o estado do caso de uso;</td>
+  </tr>
+  <tr>
+  <td><b>Polymorphism</b></td>
+    <td>É um princípio, no qual subclasses de uma superclasse são capazes de invocar métodos, que comportam-se de maneira diferente para cada classe derivada</td>
+    <td>Facilita a manutenção e inserção de um novo tipo de classe
+</td>
+  </tr>
+
+<tr>
+  <td><b>Pure Fabrication</b></td>
+    <td>É uma classe que não representa um conceito no domínio do problema deve atender as seguintes características : baixo acoplamento e potencial de reutilização dos mesmos derivados.</td>
+    <td>Apresenta vantagens como a criação de classes muito coesas e remove características não coesas das classes de domínios de negócios.</td>
+  </tr>
+
+<tr>
+  <td><b>Indirection</b></td>
+    <td>Suporta baixo acoplamento(e reusa potencial)entre dois elementos, atribuindo a responsabilidade de mediação entre eles a um objeto intermediário.</td>
+    <td>Visa atribuir responsabilidades, de modo que, olha para determinada responsabilidade determinando assim, as informações necessárias para cumpri-la e, consecutivamente, determina o local de armazenamento dessa informação.</td>
+  </tr>
+<tr>
+  <td><b>Protected Variations</b></td>
+    <td>É um princípio básico na motivação de grande parte dos mecanismos e padrões na programação e no projeto, para fornecer flexibilidade e proteção contra variações.</td>
+    <td>Promove a contenção de variações e instabilidades, durante o projeto de objetos e sistemas, para que não ocorra a expansão de impactos a outros elementos.</td>
+  </tr>
+
+</table>
+<p><b>09- Existem outros padrões além destes? Dê exemplos</b></p>
+<p></p>
+<p><b>10- Você já pensou em criar uma biblioteca de padrões seus? Mostre um exemplo em caso positivo.</b></p>
+<p>Não</p>
+</body>
+</html>
